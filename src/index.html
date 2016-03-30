@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <title>SUBARU斯巴鲁</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+   
+
+</head>
+<body>
+   <div class="section first">
+   11111111
+   </div>
+   <div class="section sec">
+   22222
+   </div>
+   <script type="text/javascript" src="js/app.js"></script>
+   <script type="text/javascript">
+       (function changePage(){
+            //console.log("函数运行")
+            var pageDown=0;
+
+            document.addEventListener('touchstart',function(ev){
+                var ev=ev||event;
+                event.preventDefault()
+                pageDown=ev.changedTouches[0].pageY;
+              
+            })
+           document.addEventListener('touchend',function(ev){
+                //console.log("触发切换")
+                var ev=ev||event;
+                event.preventDefault()
+                var pageUp=ev.changedTouches[0].pageY;
+                if(pageDown-pageUp>60){
+                   $(".first").removeClass("section-in");
+                   $(".first").addClass("section-out");
+                  // $(".sec").removeClass("section-in");
+                   $(".sec").addClass("section-in");
+                }
+            })
+        })()
+   </script>
+</body>
+</html>
