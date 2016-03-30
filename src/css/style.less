@@ -29,48 +29,71 @@ body{
 		position:absolute;
 		top:0;
 		left:0.390625rem;
+		animation:slogan 1s;
 	}
 	.slogan{
 		.div-img(8.0rem,3.765625rem,"../images/main-til.png");
 		position:absolute;
 		top:1.53125rem;
 		left:1.15625rem;
+		animation:slogan 1s;
 	}
 	.slogan-two{
 		.div-img(5.875rem,0.8125rem,"../images/main-til2.png");
 		position:absolute;
 		top:5.40625rem;
 		left:1.0rem;
+		animation:building 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		opacity:0;
 	}
 	.flower-tree{
 		.div-img(4.15625rem,7.328125rem,"../images/flowertree.png");
 		position:absolute;
 		top:4.359375rem;
 		right:0;
+		animation:car 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		opacity:0;
 	}
 	.bg-first{
-		.div-img(10.0rem,9.15625rem,"../images/bgfirst.png");
+		.div-img(10.0rem,11.6875rem,"../images/bgfirst.png");
 		position:absolute;
 		bottom:0rem;
 		right:0;
+		animation:ground 1s;
 	}
 	.building{
 		.div-img(8.78125rem,5.8125rem,"../images/building.png");
 		position:absolute;
 		bottom:3.1875rem;
 		right:0;
+		animation:building 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		opacity:0;
 	}
 	.cat{
 		.div-img(2.390625rem,2.640625rem,"../images/cat.png");
 		position:absolute;
-		bottom:2.1875rem;
+		bottom:2.859375rem;
 		left:0.25rem;
+		animation:building 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		opacity:0;
 	}
 	.car{
 		.div-img(9.53125rem,5.453125rem,"../images/car.png");
 		position:absolute;
-		bottom:0;
+		bottom:0.15625rem;
 		right:0rem;
+		animation:car 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		opacity:0;
 	}
 	.cloudy{
 		.div-img(1.796875rem,0.40625rem,"../images/cloudy.png");
@@ -88,6 +111,12 @@ body{
 		.div-img(4.890625rem,1.875rem,"../images/sec_title.png");
 		position:absolute;
 		top:0.625rem;
+		left:0.46875rem;
+	}
+	.place{
+		.div-img(8.84375rem,12.1875rem,"../images/place.png");
+		position:absolute;
+		bottom:1.25rem;
 		left:0.46875rem;
 	}
 }
@@ -304,4 +333,176 @@ body{
 			}
 		}
 	}
+}
+
+.section.first.section-out{
+	animation:out 1s;
+	animation-fill-mode: forwards;
+}
+.section.sec.section-in{
+	display:block !important;
+	animation:in 1s;
+	animation-fill-mode: forwards;
+}
+.carmove{
+	.div-img(1.203125rem,0.875rem,"../images/movecar.png");
+	position:absolute;
+	bottom:3.8625rem;
+	left:4.23125rem;
+	animation:carmove1 1s linear;
+	animation-fill-mode: forwards;
+	z-index: 999;
+}
+.carmove.carmove2{
+	animation:carmove2 1s linear;
+	animation-fill-mode: forwards;
+	left:2.2rem;
+    bottom:2.66875rem;
+}
+.zh{
+	.div-img(4.5625rem,1.78125rem,"../images/zh.png");
+	position:absolute;
+	bottom:3.61875rem;
+	left:0.46875rem;
+	opacity:0;
+	animation:in 1s linear;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+.midline{
+	width:100%;
+	height:1px;
+	position:absolute;
+	bottom:4.25rem;
+}
+.zhline{
+	.div-img(2.28125rem,0.984375rem,"../images/line1.png");
+	background-size: 2.28125rem,0.984375rem;
+	position:absolute;
+	top:0.625rem;
+	left:2.640625rem;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+/*动画部分*/
+@keyframes ground {
+  from {
+    transform: translateY(8rem) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes slogan {
+  from {
+    transform: translateY(-8rem) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes building {
+  from {
+  	opacity:1;
+    transform: translateX(-8rem) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+  	opacity:1;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes car {
+  from {
+  	opacity:1;
+    transform: translateX(8rem) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+  	opacity:1;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes out {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:1
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:0
+  }
+}
+@keyframes in {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:0
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:1
+  }
+}
+@keyframes carmove1 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:2.2rem;
+    bottom:2.66875rem;
+  }
+}
+@keyframes carmove2 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:0.5625rem;
+    bottom:1.40625rem;
+  }
+}
+@keyframes line1 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    height:0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
 }
