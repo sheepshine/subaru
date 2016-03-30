@@ -43,3 +43,57 @@ body {
   top: 5.40625rem;
   left: 1.0rem;
 }
+.first .flower-tree {
+  width: 4.15625rem;
+  height: 7.328125rem;
+  background: url("../images/flowertree.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 4.359375rem;
+  right: 0;
+}
+.first .bg-first {
+  width: 10rem;
+  height: 9.15625rem;
+  background: url("../images/bgfirst.png");
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+}
+.first .building {
+  width: 8.78125rem;
+  height: 5.8125rem;
+  background: url("../images/building.png");
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 3.1875rem;
+  right: 0;
+}
+.first .cat {
+  width: 2.390625rem;
+  height: 2.640625rem;
+  background: url("../images/cat.png");
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 2.1875rem;
+  left: 0.25rem;
+}
+.first .car {
+  width: 9.53125rem;
+  height: 5.453125rem;
+  background: url("../images/car.png");
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0rem;
+}
+.first .cloudy {
+  width: 1.796875rem;
+  height: 0.40625rem;
+  background: url("../images/cloudy.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0.65625rem;
+  right: 0.3125rem;
+}
