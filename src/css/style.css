@@ -10,8 +10,6 @@ body {
 .section {
   width: 100%;
   height: 100%;
-  font-size: 0.9375rem;
-  color: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -96,4 +94,241 @@ body {
   position: absolute;
   top: 0.65625rem;
   right: 0.3125rem;
+}
+.section.sec {
+  background: url("../images/bg2.jpg");
+  background-size: 100% 100%;
+}
+.section.sec .tile {
+  width: 4.890625rem;
+  height: 1.875rem;
+  background: url("../images/sec_title.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0.625rem;
+  left: 0.46875rem;
+}
+.section.three .ruler {
+  width: 9.0625rem;
+  height: 6.9375rem;
+  background: url("../images/ruler-box.png");
+  background-size: 100% 100%;
+  display: block;
+  margin: 0.4375rem auto 0;
+  padding: 1.28125rem 0.5625rem 0;
+  box-sizing: border-box;
+}
+.section.three .ruler > p {
+  font-size: 0.375rem;
+  line-height: 0.53125rem;
+  color: #fff;
+}
+.section.three h1 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 0.65625rem 0 0.421875rem;
+}
+.section.three .input-group {
+  width: 7.03125rem;
+  height: 1.1875rem;
+  border: 2px solid #A1D6FA;
+  border-radius: 0.59375rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 0.3125rem auto;
+}
+.section.three .input-group span {
+  font-size: 0.5rem;
+  color: #135d90;
+  line-height: 1.1875rem;
+  margin-left: 0.5625rem;
+}
+.section.three .input-group input.name {
+  margin-left: 1.015625rem;
+}
+.section.three .input-group input {
+  height: 1.1875rem;
+  width: 3.9375rem;
+  color: #135d90;
+  font-size: 0.5rem;
+  border: none;
+  background: transparent;
+}
+.section.three .tip {
+  font-size: 0.375rem;
+  color: #0f4b75;
+  width: 7.09375rem;
+  display: block;
+  margin: 0 auto 0;
+  line-height: 0.5rem;
+}
+.section.three .join {
+  width: 7rem;
+  height: 1.265625rem;
+  background: url("../images/joinbutton.png");
+  background-size: 100% 100%;
+  border: none;
+  margin: 0.40625rem auto 0;
+  display: block;
+}
+.section.four .tile {
+  width: 9.0625rem;
+  height: 2.03125rem;
+  background: #2077b1;
+  border-radius: 0.125rem;
+  margin: 0.625rem auto 0;
+  color: #fff;
+  font-size: 0.4375rem;
+  line-height: 0.625rem;
+  padding: 0.3rem 0.2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+.section.four .car-warp {
+  text-align: center;
+  margin-top: 0.59375rem;
+}
+.section.four .car-warp > div {
+  display: inline-block;
+  margin: 0.375rem;
+}
+.section.four .car-warp .car1 {
+  width: 3.75rem;
+  height: 5.203125rem;
+  background: url("../images/car-one.png");
+  background-size: 100% 100%;
+}
+.section.four .car-warp .car2 {
+  width: 3.75rem;
+  height: 5.203125rem;
+  background: url("../images/car-two.png");
+  background-size: 100% 100%;
+}
+.section.four .car-warp .car3 {
+  width: 3.75rem;
+  height: 5.203125rem;
+  background: url("../images/car-three.png");
+  background-size: 100% 100%;
+}
+.section.four .car-warp .car4 {
+  width: 3.75rem;
+  height: 5.203125rem;
+  background: url("../images/car-four.png");
+  background-size: 100% 100%;
+}
+.section.four .hasreward,
+.section.four .norewardwarp {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section.four .hasreward .reward {
+  width: 7.359375rem;
+  height: 9.859375rem;
+  background: url("../images/reward.png");
+  background-size: 100% 100%;
+  margin: 1.9375rem auto 0;
+  position: relative;
+}
+.section.four .hasreward .reward .button {
+  width: 100%;
+  height: 1.09375rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section.four .norewardwarp .noreward {
+  width: 7.359375rem;
+  height: 9.171875rem;
+  background: url("../images/noreward.png");
+  background-size: 100% 100%;
+  margin: 1.9375rem auto 0;
+  position: relative;
+}
+.section.four .norewardwarp .noreward .button {
+  width: 100%;
+  height: 1.09375rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section.five {
+  background: url("../images/bg3.jpg");
+  background-size: 100% 100%;
+}
+.section.five .warp {
+  width: 8.46875rem;
+  height: 9.96875rem;
+  background: #2077b1;
+  border-radius: 0.125rem;
+  margin: 0.78125rem auto 0;
+}
+.section.five .warp p {
+  font-size: 0.4375rem;
+  color: #fff;
+  line-height: 0.625rem;
+  padding: 0.53125rem 0.6875rem;
+}
+.section.five .warp .QRcode {
+  width: 3.40625rem;
+  height: 3.4375rem;
+  background: url("../images/QRcoed.png");
+  background-size: 100% 100%;
+  margin: 0.59375rem auto 0.1875rem;
+}
+.section.five .warp p.ftil {
+  font-size: 0.375rem;
+  color: #9ED6FC;
+  line-height: 0.5625rem;
+  padding: 0;
+  text-align: center;
+}
+.section.five .warp .rankbtn {
+  width: 3.578125rem;
+  height: 0.78125rem;
+  background: url("../images/rankbtn.png");
+  background-size: 100% 100%;
+  border: none;
+  display: block;
+  margin: 0.46875rem auto 0;
+}
+.section.five .rankwarp {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section.five .rankwarp .ranklist {
+  width: 7.359375rem;
+  height: 10.5rem;
+  background: url("../images/ranklist.png");
+  background-size: 100% 100%;
+  margin: 1.6875rem auto 0;
+  position: relative;
+}
+.section.five .rankwarp .list-box {
+  width: 7.390625rem;
+  height: 7.90625rem;
+  position: absolute;
+  bottom: 0;
+  overflow: scroll;
+  padding: 0.40625rem 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.section.five .rankwarp .list-item {
+  margin: 0.15625rem 0;
+}
+.section.five .rankwarp .list-item > span {
+  font-size: 0.4375rem;
+  color: #56688e;
+}
+.section.five .rankwarp .list-item > span.phone {
+  margin-left: 1.28125rem;
 }
