@@ -418,6 +418,9 @@ body{
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
+.zh.carmove2{
+	animation:out 1s linear;
+}
 .midline{
 	width:100%;
 	height:1px;
@@ -426,10 +429,23 @@ body{
 }
 .zhline{
 	.div-img(2.28125rem,0.984375rem,"../images/line1.png");
-	background-size: 2.28125rem,0.984375rem;
+	background-size: 2.28125rem 0.984375rem;
 	position:absolute;
-	top:0.625rem;
+	top:0.7rem;
 	left:2.640625rem;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.xzline{
+	.div-img(1.953125rem,1.28125rem,"../images/line2.png");
+	background-size: 1.953125rem 1.28125rem;
+	position:absolute;
+	top:1.5625rem;
+	left:0.90625rem;
+	display:none;
+}
+.xzline.carmove2{
+	display:block;
 	animation:line1 1s linear;
 	animation-fill-mode: forwards;
 }
