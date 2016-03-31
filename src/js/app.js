@@ -4,5 +4,9 @@ function sec(){
 		$(".carmove").addClass("carmove2");
 		$(".zh").addClass("carmove2");
 		$(".xzline").addClass("carmove2");
+		setTimeout(function(){
+			$(".xz").addClass("carmove2");
+		},1000)
+		
 	},2000)
 }

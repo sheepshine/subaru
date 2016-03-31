@@ -465,8 +465,8 @@ body {
   background: url("../images/zh.png");
   background-size: 100% 100%;
   position: absolute;
-  bottom: 3.61875rem;
-  left: 0.46875rem;
+  top: -1.171875rem;
+  left: 0.4375rem;
   opacity: 0;
   animation: in 1s linear;
   animation-delay: 1s;
@@ -474,6 +474,19 @@ body {
 }
 .zh.carmove2 {
   animation: out 1s linear;
+}
+.xz {
+  width: 6.078125rem;
+  height: 1.78125rem;
+  background: url("../images/xz.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0.09375rem;
+  left: 0.3125rem;
+  display: none;
+}
+.xz.carmove2 {
+  display: block;
 }
 .midline {
   width: 100%;
