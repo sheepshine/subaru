@@ -157,17 +157,20 @@ body{
 			vertical-align:bottom;
 		}
 		input.name{
-			margin-left: 1.015625rem;
 			vertical-align:bottom;
 		}
 		input{
+			margin-left: 0.46875rem;
 			height:1.1875rem;
-			width:3.9375rem;
+			width:6.09375rem;
 			color:#135d90;
 			font-size: 0.5rem;
 			border:none;
 			background:transparent;
 			vertical-align:bottom;
+		}
+		::-webkit-input-placeholder {
+			color:#135d90;
 		}
 	}
 	.tip{
@@ -285,6 +288,7 @@ body{
 		.QRcode{
 			.div-img(3.40625rem,3.4375rem,"../images/QRcoed.png");
 			margin:0.59375rem auto 0.1875rem;
+			display:block;
 		}
 		p.ftil{
 			font-size: 0.375rem;
@@ -415,6 +419,12 @@ body{
 	left:2.2rem;
     bottom:2.66875rem;
 }
+.carmove.carmove4{
+	animation:carmove3 1s linear;
+	animation-fill-mode: forwards;
+	left:0.5625rem;
+    bottom:1.40625rem;
+}
 .zh{
 	.div-img(4.5625rem,1.78125rem,"../images/zh.png");
 	position:absolute;
@@ -437,6 +447,9 @@ body{
 }
 .xz.carmove2{
 	display:block;
+}
+.xz.carmove3{
+	display:none;
 }
 .midline{
 	width:100%;
@@ -465,6 +478,181 @@ body{
 	display:block;
 	animation:line1 1s linear;
 	animation-fill-mode: forwards;
+}
+.fylline{
+	width:3.21875rem;
+	height:4.21875rem;
+	position:absolute;
+	bottom:-1.359375rem;
+	left:3rem;
+	display:none;
+	overflow:hidden;
+}
+.fylline .inside{
+	.div-img(3.21875rem,4.21875rem,"../images/line3.png");
+	background-size: 3.21875rem 4.21875rem;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.cyxline{
+	.div-img(5.328125rem,1.484375rem,"../images/line8.png");
+	background-size: 5.328125rem 1.484375rem;
+	position:absolute;
+	top:-6.25rem;
+	left:2.25rem;
+	display:none;
+}
+.fyl{
+	.div-img(4.5625rem,1.78125rem,"../images/fyl.png");
+	position:absolute;
+	top:-5.53125rem;
+	left:3.65625rem;
+	display:none;
+}
+.fylline.carmove4{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.fyl.carmove5{
+	display:block;
+}
+.ashline{
+	width:1.46875rem;
+	height:2.734375rem;
+	background-size: 1.46875rem 2.734375rem;
+	position:absolute;
+	bottom:3.19375rem;
+	left:6.01875rem;
+	display:none;
+	overflow:hidden;
+}
+.ahh{
+	.div-img(6.4375rem,1.78125rem,"../images/ahh.png");
+	position:absolute;
+	left:3.375rem;
+	bottom:7.21875rem;
+	display:none
+}
+.ahh.carmove6{
+	display:block
+}
+.ashline .inside{
+	.div-img(1.46875rem,2.734375rem,"../images/line4.png");
+	background-size: 1.46875rem 2.734375rem;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.ashline.carmove5{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.mzdline{
+	width:0.34375rem;
+	height: 2.1875rem;
+	position:absolute;
+	bottom:6.234375rem;
+	left:7.25rem;
+	display:none;
+	overflow:hidden;
+}
+.msh{
+	.div-img(4.5625rem,1.78125rem,"../images/msh.png");
+	position:absolute;
+	left:4.96875rem;
+	bottom:9.421875rem;
+	display:none	
+}
+.msh.carmove7{
+	display:block;	
+}
+.mzdline .inside{
+	.div-img(0.34375rem,2.1875rem,"../images/line5.png");
+	background-size: 0.34375rem 2.1875rem;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.qxlhline{
+	.div-img(2.375rem,1.296875rem,"../images/line6.png");
+	background-size: 2.375rem 1.296875rem;
+	position:absolute;
+	left:4.84375rem;
+	top:-8.46875rem;
+	display:none;
+}
+.toahhline{
+	.div-img(2.71875rem,0.9375rem,"../images/line7.png");
+	background-size: 2.71875rem 0.9375rem;
+	position:absolute;
+	left:4.84375rem;
+	top:-7.0875rem;
+	display:none;
+}
+.qxlh{
+	.div-img(4.5625rem,1.78125rem,"../images/qxlh.png");
+	position:absolute;
+	left:2.59375rem;
+	bottom:8.140625rem;
+	display:none;
+}
+.qxlh.carmove8{
+	display:block
+}
+.toahhline.carmove9{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.mzdline.carmove6{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.qxlhline.carmove8{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.carmove.carmove5{
+	animation:carmove4 1s linear;
+	animation-fill-mode: forwards;
+	left:2.2rem;
+    bottom:2.66875rem;
+}
+.carmove.carmove6{
+	animation:carmove5 1s linear;
+	animation-fill-mode: forwards;
+	left:5.3125rem;
+    bottom:7.078125rem;
+}
+.carmove.carmove7{
+	animation:carmove6 1s linear;
+	animation-fill-mode: forwards;
+	left:6.96875rem;
+    bottom:10.265625rem;
+}
+
+.carmove.carmove8{
+	animation:carmove7 1s linear;
+	animation-fill-mode: forwards;
+	left:6.8125rem;
+    bottom:12.528125rem;
+}
+.carmove.carmove9{
+	animation:carmove5 1s linear;
+	animation-fill-mode: forwards;
+	left:4.625rem;
+    bottom:11.21875rem;
+}
+.carmove.carmove10{
+	animation:carmove8 1s linear;
+	animation-fill-mode: forwards;
+	left:5.3125rem;
+    bottom:7.078125rem;
 }
 /*动画部分*/
 @keyframes ground {
@@ -573,6 +761,90 @@ body{
     perspective: 1000;
     left:0.5625rem;
     bottom:1.40625rem;
+  }
+}
+@keyframes carmove3 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:2.2rem;
+    bottom:2.66875rem;
+  }
+}
+@keyframes carmove4 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:5.3125rem;
+    bottom:7.078125rem;
+  }
+}
+@keyframes carmove5 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:6.96875rem;
+    bottom:10.265625rem;
+  }
+}
+@keyframes carmove6 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:6.8125rem;
+    bottom:12.528125rem;
+  }
+}
+@keyframes carmove7 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:4.625rem;
+    bottom:11.21875rem;
+  }
+}
+@keyframes carmove8 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:2.125rem;
+    bottom:8.96875rem;
   }
 }
 @keyframes line1 {
