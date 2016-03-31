@@ -1,4 +1,4 @@
-/*汽车运动*/
+/*汽车运动 */
 function sec(){
 	setTimeout(function(){
 		$(".carmove").addClass("carmove2");
