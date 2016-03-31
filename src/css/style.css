@@ -364,6 +364,74 @@ body {
 .section.five .rankwarp .list-item > span.phone {
   margin-left: 1.28125rem;
 }
+.arrow {
+  width: 0.625rem;
+  height: 0.640625rem;
+  background: url("../images/arrow.png");
+  background-size: 100% 100%;
+  animation: arrow 1s linear infinite;
+  animation-delay: 2s;
+  opacity: 0;
+  position: absolute;
+  bottom: 0.3125rem;
+  left: 50%;
+  margin-left: -0.3125rem;
+}
+.flower {
+  width: 8.03125rem;
+  height: 10.9375rem;
+  background: url("../images/flower.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  animation: flower 2s linear infinite;
+}
+.flower4 {
+  width: 8.03125rem;
+  height: 10.9375rem;
+  background: url("../images/flower.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 1.5625rem;
+  top: 3rem;
+  opacity: 0;
+  animation: flower 3s linear infinite;
+  animation-delay: 1.5s;
+}
+.flower3 {
+  width: 0.9375rem;
+  height: 0.875rem;
+  background: url("../images/flower2.png");
+  background-size: 100% 100%;
+  position: absolute;
+  right: 1.03125rem;
+  top: 6.015625rem;
+  animation: flower3 3s linear infinite;
+}
+.flower5 {
+  width: 0.9375rem;
+  height: 0.875rem;
+  background: url("../images/flower2.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 5.3125rem;
+  top: 2.015625rem;
+  animation: flower4 3s linear infinite;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+.flower2 {
+  width: 0.578125rem;
+  height: 0.546875rem;
+  background: url("../images/flower2.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 5.78125rem;
+  top: 2.8125rem;
+  animation: flower2 5s linear infinite;
+}
 .section.first.section-out {
   animation: out 1s;
   animation-fill-mode: forwards;
@@ -540,6 +608,100 @@ body {
   }
   to {
     transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes arrow {
+  from {
+    transform: translateY(-0.8rem) translate3d(0, 0, 0);
+    opacity: 0;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes flower {
+  0% {
+    transform: translateY(0rem) translateX(1rem) translate3d(0, 0, 0);
+    opacity: 0;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0.8rem) translateX(0rem) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1.6rem) translateX(-0.8rem) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes flower2 {
+  0% {
+    transform: translateY(0rem) translateX(0rem) rotate(0deg) translate3d(0, 0, 0);
+    opacity: 0;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5rem) translateX(1rem) rotate(360deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10rem) translateX(2rem) rotate(720deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes flower3 {
+  0% {
+    transform: translateY(0rem) translateX(0rem) rotate(0deg) translate3d(0, 0, 0);
+    opacity: 0;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(3rem) translateX(-1rem) rotate(180deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6rem) translateX(-1.2rem) rotate(360deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}
+@keyframes flower4 {
+  0% {
+    transform: translateY(0rem) translateX(0rem) rotate(0deg) translate3d(0, 0, 0);
+    opacity: 0;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(2rem) translateX(-1rem) rotate(180deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(5rem) translateX(-2rem) rotate(360deg) translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000;
   }
