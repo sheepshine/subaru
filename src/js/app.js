@@ -46,6 +46,21 @@ function sec(){
 													setTimeout(function(){
 														$(".carmove").removeClass("carmove9");
 														$(".carmove").addClass("carmove10");
+														$(".cyxline").addClass("carmove10");
+														setTimeout(function(){
+															$(".cyx").addClass("carmove10");
+															setTimeout(function(){
+																$(".cyx").removeClass("carmove10");
+																$(".carmove").addClass("carmove11");
+																$(".tocyxline").addClass("carmove11");
+																setTimeout(function(){
+																	$(".cyx").removeClass("carmove10");
+																	
+																		$(".carmove").addClass("carmove12");
+																	
+																},1000)
+															},2000)
+														},1000)
 													},1000)
 												},2000)
 											},1000)

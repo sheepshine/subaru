@@ -602,6 +602,29 @@ body{
 .qxlh.carmove8{
 	display:block
 }
+.cyx{
+	.div-img(4.5625rem,1.78125rem,"../images/cyx.png");
+	position:absolute;
+	left:0.40625rem;
+	bottom:5.78125rem;
+	display:none;
+}
+.tocyxline{
+	.div-img(0.53125rem,6.4375rem,"../images/tozh.png");
+	background-size: 0.53125rem 6.4375rem;
+	position:absolute;
+	left:2.1875rem;
+	top:-4.828125rem;
+	display:none
+}
+.tocyxline.carmove11{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.cyx.carmove10{
+	display:block
+}
 .toahhline.carmove9{
 	display:block;
 	animation:line1 1s linear;
@@ -613,6 +636,11 @@ body{
 	animation-fill-mode: forwards;
 }
 .qxlhline.carmove8{
+	display:block;
+	animation:line1 1s linear;
+	animation-fill-mode: forwards;
+}
+.cyxline.carmove10{
 	display:block;
 	animation:line1 1s linear;
 	animation-fill-mode: forwards;
@@ -651,9 +679,21 @@ body{
 .carmove.carmove10{
 	animation:carmove8 1s linear;
 	animation-fill-mode: forwards;
-	left:5.3125rem;
-    bottom:7.078125rem;
-}
+	left:6.96875rem;
+    bottom:10.265625rem;
+ }
+ .carmove.carmove11{
+	animation:carmove9 1s linear;
+	animation-fill-mode: forwards;
+	left:2.125rem;
+    bottom:8.96875rem;
+ }
+ .carmove.carmove12{
+	animation:carmove10 1s linear;
+	animation-fill-mode: forwards;
+	left:2.390625rem;
+    bottom:2.65625rem;
+ }
 /*动画部分*/
 @keyframes ground {
   from {
@@ -845,6 +885,34 @@ body{
     perspective: 1000;
     left:2.125rem;
     bottom:8.96875rem;
+  }
+}
+@keyframes carmove9 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:2.390625rem;
+    bottom:2.65625rem;
+  }
+}
+@keyframes carmove10 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:4.8125rem;
+    bottom:3.46875rem;
   }
 }
 @keyframes line1 {
