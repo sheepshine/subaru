@@ -273,6 +273,14 @@ body {
   margin: 1.9375rem auto 0;
   position: relative;
 }
+.section.four .hasreward .rewardhas {
+  width: 7.359375rem;
+  height: 7.65625rem;
+  background: url("../images/rewardhas.png");
+  background-size: 100% 100%;
+  margin: 2.9375rem auto 0;
+  position: relative;
+}
 .section.four .hasreward .reward .button {
   width: 100%;
   height: 1.09375rem;
@@ -286,6 +294,14 @@ body {
   background: url("../images/noreward.png");
   background-size: 100% 100%;
   margin: 1.9375rem auto 0;
+  position: relative;
+}
+.section.four .norewardwarp .norewardhas {
+  width: 7.375rem;
+  height: 7.65625rem;
+  background: url("../images/noreward_has.png");
+  background-size: 100% 100%;
+  margin: 2.9375rem auto 0;
   position: relative;
 }
 .section.four .norewardwarp .noreward .button {
@@ -371,6 +387,15 @@ body {
 }
 .section.five .rankwarp .list-item > span.phone {
   margin-left: 1.28125rem;
+}
+.closeBtn {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background: url("../images/close.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: -0.46875rem;
+  right: -0.46875rem;
 }
 .arrow {
   width: 0.625rem;
