@@ -1,4 +1,4 @@
-body,html{
+html{
 	width: 100%;height: 100%
 }
 
@@ -18,6 +18,8 @@ body{
 	animation-fill-mode:forwards;
 }
 .section{
+	background: url("../images/bg.jpg");
+    background-size: 100% 100%;
 	width: 100%;height: 100%;
 	position: absolute;
 	top: 0;
@@ -204,25 +206,45 @@ body{
 	}
 	.car-warp{
 		text-align: center;
-		margin-top: 0.59375rem;
+		width:10.0rem;
+		height:12.1875rem;
+		position:relative;
 	}
 	.car-warp{
-		>div{
+		.selectcar{
 			display:inline-block;
 			margin: 0.375rem;
+			box-shadow:5px 5px 2px 2px #2071b1;
+			border-radius: 5px;
 		}
 		.car1{
 			.div-img(3.75rem,5.203125rem,"../images/car-one.png");
+			position:absolute;
+			left:0.46875rem;
+			top:0.46875rem
 		}
 		.car2{
 			.div-img(3.75rem,5.203125rem,"../images/car-two.png");
+			position:absolute;
+			right:0.46875rem;
+			top:0.46875rem;
 		}
 		.car3{
 			.div-img(3.75rem,5.203125rem,"../images/car-three.png");
+			position:absolute;
+			left:0.46875rem;
+			bottom:0
 		}
 		.car4{
 			.div-img(3.75rem,5.203125rem,"../images/car-four.png");
+			position:absolute;
+			right:0.46875rem;
+			bottom:0;
 		}
+		.selectcar.active{
+			
+		}
+		
 	}
 	.hasreward,.norewardwarp{
 		width:100%;
@@ -232,12 +254,34 @@ body{
 		top:0;
 		left:0;
 		display:none;
+		z-index: 999999;
 	}
 	.hasreward{
+		.light{
+			width:100%;
+			height:100%;
+			background:url("../images/light.png");
+			background-size: 100% 100%;
+			animation: light 0.5s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+			z-index: 7777;
+		}
 		.reward{
 			.div-img(7.359375rem,9.859375rem,"../images/reward.png");
 			margin:1.9375rem auto 0;
-			position:relative;
+			animation: light 1s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+			z-index: 8888;
 		}
 		.rewardhas{
 			.div-img(7.359375rem,7.65625rem,"../images/rewardhas.png");
@@ -255,10 +299,30 @@ body{
 		}
 	}
 	.norewardwarp{
+		.light{
+			width:100%;
+			height:100%;
+			background:url("../images/light.png");
+			background-size: 100% 100%;
+			animation: light 0.5s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+			z-index: 7777;
+		}
 		.noreward{
 			.div-img(7.359375rem,9.171875rem,"../images/noreward.png");
-			margin:1.9375rem auto 0;
-			position:relative;
+			animation: light 1s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+			z-index: 8888;
 		}
 		.norewardhas{
 			.div-img(7.375rem,7.65625rem,"../images/noreward_has.png");
@@ -276,6 +340,98 @@ body{
 		}
 	}
 }
+.car1.theout,.car2.theout,.car3.theout,.car4.theout{
+	animation: theout 1s;
+}
+.hasreward,.norewardwarp{
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.5);
+		position:absolute;
+		top:0;
+		left:0;
+		display:none;
+	}
+	.hasreward{
+		.light{
+			width:100%;
+			height:100%;
+			background:url("../images/light.png");
+			background-size: 100% 100%;
+			animation: light 0.5s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+		}
+		.reward{
+			.div-img(7.359375rem,9.859375rem,"../images/reward.png");
+			margin:1.9375rem auto 0;
+			animation: light 1s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+
+		}
+		.rewardhas{
+			.div-img(7.359375rem,7.65625rem,"../images/rewardhas.png");
+			margin:2.9375rem auto 0;
+			position:relative;
+		}
+		.reward{
+			.button{
+				width:100%;
+				height:1.09375rem;
+				position:absolute;
+				bottom:0;
+				left:0
+			}
+		}
+	}
+	.norewardwarp{
+		.light{
+			width:100%;
+			height:100%;
+			background:url("../images/light.png");
+			background-size: 100% 100%;
+			animation: light 0.5s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+		}
+		.noreward{
+			.div-img(7.359375rem,9.171875rem,"../images/noreward.png");
+			animation: light 1s;
+			position:absolute;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+		}
+		.norewardhas{
+			.div-img(7.375rem,7.65625rem,"../images/noreward_has.png");
+			margin:2.9375rem auto 0;
+			position:relative;
+		}
+		.noreward{
+			.button{
+				width:100%;
+				height:1.09375rem;
+				position:absolute;
+				bottom:0;
+				left:0
+			}
+		}
+	}
 .section.five{
 	background:url("../images/bg3.jpg");
 	background-size: 100% 100%;
@@ -438,7 +594,7 @@ body{
 .carmove.carmove4{
 	animation:carmove3 1s linear;
 	animation-fill-mode: forwards;
-	left:0.5625rem;
+	left:0.4625rem;
     bottom:1.40625rem;
 }
 .zh{
@@ -446,13 +602,10 @@ body{
 	position:absolute;
 	top:-1.171875rem;
 	left:0.4375rem;
-	opacity:0;
-	animation:in 1s linear;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
+	display:none;
 }
 .zh.carmove2{
-	animation:out 1s linear;
+	display:block;
 }
 .xz{
 	.div-img(6.078125rem,1.78125rem,"../images/xz.png");
@@ -777,6 +930,20 @@ body{
     opacity:0
   }
 }
+@keyframes out2 {
+  from {
+    transform: rotate(0) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:1
+  }
+  to {
+    transform:rotate(360deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:0
+  }
+}
 @keyframes in {
   from {
     transform: translate3d(0, 0, 0);
@@ -978,4 +1145,279 @@ body{
     }
     50%{ opacity: 1;transform:translateY(2rem) translateX(-1rem) rotate(180deg) translate3d(0, 0, 0);backface-visibility: hidden;perspective: 1000;}
     100%{ opacity: 0;transform:translateY(5rem) translateX(-2rem) rotate(360deg) translate3d(0, 0, 0);backface-visibility: hidden;perspective: 1000;}
+}
+@keyframes activeshow {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+   	opacity:0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:1;
+  }
+}
+/*修改补充*/
+.aniwarp{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	animation:activeshow 1s;
+	z-index: 2;
+	margin:0 !important;
+}
+.aniwarp{
+	.loading{
+		position:fixed;
+		bottom:0.46875rem;
+		left:0;
+		text-align: center;
+		width:100%;
+		color:#fff;
+		display:none;
+	}
+}
+.loadingImag{
+	.div-img(4.78125rem,4.84375rem,"../images/loading.png");
+	position:absolute;
+	top:3.66875rem;
+	left:50%;
+	margin-left: -2.390625rem;
+	animation:loading 1s infinite linear;
+	display:none;
+	z-index: 2;
+}
+.car1.bigger{
+		animation:bigger1 1s;
+		animation-fill-mode: forwards;
+		display:block;
+		box-shadow:none !important;
+	}
+	.car2.bigger{
+		animation:bigger2 1s;
+		animation-fill-mode: forwards;
+		display:block;
+		box-shadow:none !important;
+	}
+	.car3.bigger{
+		animation:bigger3 1s;
+		animation-fill-mode: forwards;
+		display:block;
+		box-shadow:none !important;
+	}
+	.car4.bigger{
+		animation:bigger4 1s;
+		animation-fill-mode: forwards;
+		display:block;
+		box-shadow:none !important;
+	}
+	.car1.mini,.car1.mini,.car1.mini,.car1.mini{
+		animation:mini 1s;
+		animation-fill-mode: forwards;
+	}
+
+.car-warp2{
+	width:10.0rem;
+	height:12.0625rem;
+	margin-top: 3.21875rem;
+	text-align: center
+}
+.car-warp2{
+	.selectcar{
+		display:inline-block;
+		margin: 0.375rem;
+	}
+	.car1{
+			.div-img(3.75rem,5.203125rem,"../images/car-one.png");
+		}
+		.car2{
+			.div-img(3.75rem,5.203125rem,"../images/car-two.png");
+		}
+		.car3{
+			.div-img(3.75rem,5.203125rem,"../images/car-three.png");
+		}
+		.car4{
+			.div-img(3.75rem,5.203125rem,"../images/car-four.png");
+		}
+	
+}
+    
+ @keyframes bigger2 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    right:50%;
+    top:2.96875rem;
+    margin-right: -1.859375rem;
+  }
+}
+ @keyframes bigger1 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+   
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:50%;
+    top:2.96875rem;
+    margin-left: -1.859375rem;
+  }
+}
+@keyframes bigger3 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+   
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    left:50%;
+    margin-left: -1.859375rem;
+    bottom:3.16875rem;
+  }
+}
+@keyframes bigger4 {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    right:50%;
+    bottom:3.16875rem;
+    margin-right: -1.859375rem;
+  }
+}
+.activePos1{
+	position:absolute;
+    top:5.828125rem;
+    left:50%;
+    margin-left: -1.87rem !important
+}
+.activePos2{
+	position:absolute;
+    bottom:4.171875rem;
+    right:50%;
+    margin-right: -1.87rem !important
+}
+.car1.opaout{
+	animation:out 1s;
+	position: absolute;
+    margin-left: -1.859375rem !important;
+    left:50% !important;
+    top:2.96875rem !important;
+	animation-fill-mode: forwards;
+}
+.car2.opaout{
+	animation:out 1s;
+	position: absolute;
+	margin-right: -1.859375rem !important;
+    right:50% !important;
+    top:2.96875rem !important;
+	animation-fill-mode: forwards;
+}
+.car3.opaout{
+	animation:out 1s;
+	position: absolute;
+    margin-left: -1.859375rem !important;
+    left:50% !important;
+    bottom:3.16875rem  !important;
+	animation-fill-mode: forwards;
+}
+.car4.opaout{
+	animation:out 1s;
+	position: absolute;
+	right:50%  !important;
+    bottom:3.16875rem  !important;
+    margin-right: -1.859375rem !important;
+	animation-fill-mode: forwards;
+}
+.loadingImag.opaout{
+	animation:out2 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes light {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    width:0;
+    height:0;
+    opacity:0
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+   	opacity:1
+  }
+}
+@keyframes mini {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:1
+    
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    width:0;
+    height:0;
+   	opacity:0
+  }
+}
+@keyframes theout {
+  from {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    opacity:1
+    
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+   	opacity:0
+  }
+}
+@keyframes loading {
+  from {
+    transform:rotate(0) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    
+  }
+  to {
+    transform:rotate(360deg) translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
 }
