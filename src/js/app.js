@@ -131,6 +131,7 @@ $(".join").click(function(){
 })
 // 抽奖
 $(".selectcar").click(function(){
+	autoPlay()
 	console.log()
 	acitveCar($(this).index()+1)
 	var that=$(this).index()+1
@@ -195,7 +196,37 @@ function acitveCar(n){
 		$(".loadingImag").show()
 	},1000)
 	
-	
-	
-
 }
+
+function autoPlay(){
+var myAuto = document.getElementById('myaudio');
+myAuto.play();
+}
+function autoPlay2(){
+var myAuto2 = document.getElementById('myaudio2');
+myAuto2.play();
+}
+$("#thePhone").blur(function(){
+	$(".ruler").css("marginTop","0.4375rem")
+}
+)
+$("#thePhone").focus(function(){
+	$(".ruler").css("marginTop","-300px")
+}
+)
+
+var mCtr=0;
+
+    $(".mbtn").click(function(){
+    	alert(1)
+        if(mCtr==0){
+            $(".mbtn").css("background","url('../images/closem.png')");
+            document.getElementById('bg').pause();
+            mCtr=1
+        }else{
+            $(".mbtn").css("background","url('../images/openm.png')")
+            document.getElementById('bg').play();
+            mCtr=0
+        }
+        
+    })

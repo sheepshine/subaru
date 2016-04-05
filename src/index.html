@@ -10,7 +10,12 @@
 
 </head>
 <body>
-   <div class="section first">
+<audio id="bg" src="http://sbl.cqlvtu.com/Application/Home/View/Public/images/music.mp3" controls="controls" preload="auto" style="display: none"  hidden="true"  >
+   </audio>
+  <div class="loadingpage"></div>
+  <div class="mbtn"></div>
+   <div class="section first" style="display: none">
+        
         <div class="cloudy"></div>
         <div class="logo"></div>
         <div class="slogan"></div>
@@ -81,6 +86,34 @@
    
    <script type="text/javascript" src="js/app.js"></script>
    <script type="text/javascript">
+        var imgArr = ["ahh.png","arrow.png","bg.jpg","bg2.jpg","bg3.jpg","bgfirst.png","building.png","car-four.png","car-one.png","car-three.png","car-two.png","car.png","cat.png","close.png","cloudy.png","cyx.png","flower.png","flower2.png","flowertree.png","fyl.png","joinbutton.png","light.png","line1.png","line2.png","line3.png","line4.png","line5.png","line6.png","line7.png","line8.png","loading.png","logo.jpg","main-til.png","main-til2.png","movecar.png","msh.png","noreward.png","noreward_has.png","place.png","QRcoed.png","qxlh.png","rankbtn.png","ranklist.png","reward.png","rewardhas.png","ruler-box.png","sec_title.png","tozh.png","xz.png","zh.png","华南二维码2.jpg"]
+        var imgnum = 0;
+        for (var i = 0; i < imgArr.length; i++) {
+            var imgObj = document.createElement("img");
+            imgObj.src = 'http://sbl.cqlvtu.com/Application/Home/View/Public/images/' + imgArr[i];
+            imgObj.onload = function() {
+                imgnum++;
+                //parcentWidth = parseInt((imgnum / imgArr.length) * 100) + "%";
+                //$(".loadprecent").html(parcentWidth);
+                console.log(imgArr.length,imgnum)
+                if (imgnum == imgArr.length) {
+                    $('.loadingpage').hide();
+                    $('.first').show();
+                }
+            }
+        }
+        //音乐
+        setTimeout(function(){
+ $(window).scrollTop(1);
+ },0);
+  document.getElementById('bg').play();
+ document.addEventListener("WeixinJSBridgeReady", function () {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+  document.getElementById('bg').play();
+        });
+    }, false);
+ 
+
        (function changePage(){
             //console.log("函数运行")
 
@@ -91,6 +124,7 @@
                 var ev=ev||event;
                 event.preventDefault()
                 pageDown=ev.changedTouches[0].pageY;
+
               
             })
            document.addEventListener('touchend',function(ev){
